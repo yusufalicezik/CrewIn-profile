@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InfoHeader" customModule="CrewIn_project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infoTitleImage" translatesAutoresizingMaskIntoConstraints="NO" id="k90-mg-gld">
+                    <rect key="frame" x="1" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="gvQ-dw-srM"/>
+                        <constraint firstAttribute="height" constant="40" id="sNu-ak-96k"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kişisel Bilgiler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXu-M7-EdZ">
+                    <rect key="frame" x="61" y="7.5" width="117.5" height="25"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                    <color key="textColor" red="0.12637000000000001" green="0.12639" blue="0.12637000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="k90-mg-gld" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="69n-0Q-cax"/>
+                <constraint firstItem="JXu-M7-EdZ" firstAttribute="leading" secondItem="k90-mg-gld" secondAttribute="trailing" constant="20" id="BVa-TZ-cIR"/>
+                <constraint firstItem="k90-mg-gld" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="1" id="ZBF-YT-mYE"/>
+                <constraint firstItem="JXu-M7-EdZ" firstAttribute="centerY" secondItem="k90-mg-gld" secondAttribute="centerY" id="b7y-NA-7fM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="infoTitleNameLabel" destination="JXu-M7-EdZ" id="uDc-yl-4sh"/>
+            </connections>
+            <point key="canvasLocation" x="-12.318840579710146" y="-26.450892857142858"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="infoTitleImage" width="237" height="237"/>
+    </resources>
+</document>

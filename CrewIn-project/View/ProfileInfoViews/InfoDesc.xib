@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InfoDesc" customModule="CrewIn_project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infoTitleImage" translatesAutoresizingMaskIntoConstraints="NO" id="0Do-7Y-xnb">
+                    <rect key="frame" x="1" y="61" width="40" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="9an-FY-lyA"/>
+                        <constraint firstAttribute="width" constant="40" id="ZaX-nF-TIl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İsim:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBL-fw-V9v">
+                    <rect key="frame" x="56" y="51.5" width="29.5" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Çağrı" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ9-3P-WeT">
+                    <rect key="frame" x="89.5" y="52" width="308.5" height="19.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infoDescLineImage" translatesAutoresizingMaskIntoConstraints="NO" id="D5B-Qk-1s3">
+                    <rect key="frame" x="19.5" y="0.0" width="3" height="122"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="D9E-Nd-Meo"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pBL-fw-V9v" firstAttribute="leading" secondItem="0Do-7Y-xnb" secondAttribute="trailing" constant="15" id="7Ci-lW-txO"/>
+                <constraint firstAttribute="bottom" secondItem="D5B-Qk-1s3" secondAttribute="bottom" id="8uw-7r-bA1"/>
+                <constraint firstItem="D5B-Qk-1s3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ckh-Af-aVB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PZ9-3P-WeT" secondAttribute="trailing" constant="17" id="DjN-u3-M1o"/>
+                <constraint firstItem="0Do-7Y-xnb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="1" id="LJ9-G7-A8O"/>
+                <constraint firstItem="PZ9-3P-WeT" firstAttribute="leading" secondItem="pBL-fw-V9v" secondAttribute="trailing" constant="4" id="MUF-Mp-ELF"/>
+                <constraint firstItem="pBL-fw-V9v" firstAttribute="centerY" secondItem="0Do-7Y-xnb" secondAttribute="centerY" id="ZYm-Ib-h5L"/>
+                <constraint firstItem="D5B-Qk-1s3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="csk-FZ-4N3"/>
+                <constraint firstItem="0Do-7Y-xnb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ici-z8-lMm"/>
+                <constraint firstItem="D5B-Qk-1s3" firstAttribute="centerX" secondItem="0Do-7Y-xnb" secondAttribute="centerX" id="jli-Bs-8q7"/>
+                <constraint firstItem="PZ9-3P-WeT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="oxk-sN-5LA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="infoDescLabel" destination="PZ9-3P-WeT" id="zM4-sJ-Cbi"/>
+                <outlet property="infoNameLabel" destination="pBL-fw-V9v" id="HWG-Ta-Kml"/>
+            </connections>
+            <point key="canvasLocation" x="78.985507246376812" y="103.125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="infoDescLineImage" width="7" height="247"/>
+        <image name="infoTitleImage" width="237" height="237"/>
+    </resources>
+</document>
