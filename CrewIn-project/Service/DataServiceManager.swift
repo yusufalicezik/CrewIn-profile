@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 class DataServiceManager{
     static let shared = DataServiceManager()
-    fileprivate let BASE_URL = "http://******************//***/v1/values/"
+    fileprivate let BASE_URL = "http://******************//***/**/values/"
     fileprivate let INFO = "genel_bilgiler?"
 
     private init(){}
